@@ -19,18 +19,21 @@ if(numero > 0){
 
 // Exemplo 2: condicional COMPOSTA (IF/ELSE)
 let aluno = "João";
-let nota = 6.4;
-let nota2 = 8.5;
-let nota3 = 8.5;
-let nota4 = 10.0;
+let nota = 6.5;
+let nota2 = 7.6;
+let nota3 = 6.5;
+let nota4 = 8.0;
 let media = (nota + nota2 + nota3 + nota4) / 4;
 
 console.log(`Aluno: ${aluno}`);
 console.log(`Notas: ${nota},${nota2},${nota3} e ${nota4}`);
 console.log(`Media: ${media}`);
 
+let faltas = 14;
+console.log(`Faltas: ${faltas}`);
+
 let situacao;
-if(media >= 7){
+if( media >= 7 && faltas < 15){
     situacao = "aprovado";
 } else {
     situacao = "Reprovado";
@@ -51,3 +54,4 @@ if(media < 3){
     desempenho = "otimo";
 }
 console.log(desempenho);
+
