@@ -18,13 +18,62 @@ console.log(`Escola: ${escola}`);
 linha();
 console.log(`Ano: ${ano}`);
 
+/* function soma( valor1, valor2 ){
+    let total = valor1 + valor2;
+    return total;
+} */
 
+console.log( soma(10, 5) );
+//console.log( total ); // erro, pois e variavel local
 
+/* funtion soma( valor1. valor2 ){
+    let total = valor1 + valor2;
+    return total;
+} */
 
-function soma( valor1, valor2 ){
+// VERSÃO 2: sintaxe ARROW FUNCTION (FUNÇÃO SETA/FLECHA)
+const soma = (valor1, valor2) => {
     let total = valor1 + valor2;
     return total;
 }
 
-console.log( soma(10, 5) );
-//console.log( total ); // erro, pois e variavel local
+// Arrow Function com retorno IMPLICITO
+const soma1 = (valor1, valor2) => valor1 + valor2;
+
+console.log( soma1(150, 55) );
+// console.log( total ); // erro, pois e varivel local
+
+let resultado = soma(100, 50);
+
+
+linha();
+
+// Versão 1: tradiconal
+/* funtion dobra = (numero) => {
+//     let resultado = numero * 2;
+//     return resultado;*/
+
+// RETURN e capaz de processar antes de existir o resultado, permitindo colocar a formula para reduzir o codigo.
+
+/* function dobra(numero){
+    let resultado = numero * 2;
+    return numero * 2;
+} */
+
+// Versão 2: arrow function
+// const dobra = (numero) => {
+//     let resultado = numero * 2;
+//     return resultado;
+// }
+
+// const dobra = (numero) => {
+//     return numero * 2;
+// }
+
+// retorno IMPLICITO (remove {} e return)
+// Obs.: como so temos um parametro (numero), pode tirar os ()
+const dobra = (numero) => { return numero * 2 };
+
+
+console.log(dobra(10));
+console.log(dobra(150));
