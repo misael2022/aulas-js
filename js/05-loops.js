@@ -1,33 +1,34 @@
-/* Estrturas tradicionais:
+/* Estruturas tradicionais 
+(tem em todas linguagens):
 
-While     ->  enquanto
-do/while  ->  faca/enquanto
-for       ->  para
-*/
-
+while       ->  enquanto
+do/while    ->  faça/enquanto
+for         ->  para
+ */
 
 // Exemplo loop while (enquanto)
 console.log("while");
 
-// Variavel de controle de loop
-let i = 1;
+// Variável de controle do loop
+/* Obs.: normalmente é chamada de i, j ou k */
+let i = 100;
 
-while(i <= 10 ){
+while( i <= 3 ){
     console.log(`Valor de i: ${i}`);
-    i++; //incremento
+    i++; // incremento
 }
 
-console.log("------------------------------------");
-
+console.log("------------");
 console.log("do/while");
 
-let j = 1; //variavel de controle
+let j = 100; // variável de controle
 do {
     console.log(`J vale ${j}`);
     j++;
-} while ( j <= 3 ) // ou j < 4
+} while( j <= 3 ) // ou j < 4
 
-console.log("-------------------------------------");
+
+console.log("-----------");
 
 console.log("FOR");
 
@@ -35,34 +36,38 @@ for( let i = 1; i <= 5; i++ ){
     console.log(`I vale: ${i}`);
 }
 
-console.log("--------------------------------------");
+console.log("-----------");
 
-console.log("Loop e Estrtura de Dados");
+console.log("Loop e Estrutura de Dados");
 
 // ARRAY (vetor)
-let alunos = ["Eduardo", "Vagner", "Thalia", "Claudio", "Jessica"];
+let alunos = ["Eduardo", "Vagner", "Thalia", "Claudio", "Jéssica"];
 
 for( let i = 0; i < 5; i++ ){
     console.log( alunos[i] );
 }
 
-/* Sort() -> função para ordenar arrays  */
-// console.log( alunos.sort())
+/* sort() -> função para ordenar arrays */
+//console.log( alunos.sort() );
+
+
+console.log("-----------");
 
 console.log("Loops exclusivos do JS");
 
-// for/of: otimo para Arrays
-for( let aluno of alunos){
+// for/of: ótimo para Arrays
+for( let aluno of alunos ){
     console.log(aluno);
 }
 
+// Objeto
 let livro = {
-    titulo: "Senhor dos Aneis",
+    titulo: "Senhor dos Anéis",
     ano: 1954,
-    Volumes: 3,
+    volumes: 3
 };
 
 // for/in
 for( let dados in livro ){
-    console.log(livro[dados] );
+    console.log( livro[dados] );
 }

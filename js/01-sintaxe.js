@@ -1,48 +1,53 @@
-    /* alt SHIFT A
-    comentario de multiplas */
+/* ALT SHIFT A
+Comentário de múltiplas
+linhas */
 
-    // CTRL ; comentario de linha única
+// CTRL ;  Comentário de linha única
 
-    // Comando de saida de dados
+// Comando de saída de dados
 
-    /* Sempre que trabalhar com textos devemos coloca-los entre aspas SIMPLES '', DUPLAS "" ou crase ´´ */
+/* Sempre que trabalhar com textos
+devemos colocá-lo entre aspas SIMPLES '',
+DUPLAS "" ou crase `` 
 
-    console.log("Olá JavaScript!");
+Template String/Literal (veremos depois) */
 
-    /* Variaveis e constantes,
-    Espaços identificados na memoria para armazenar dados temporariamente */
+console.log(`Olá JavaScript!`);
 
-    // Variavel
-    // Obs.: antigamente, era usado "Var"
-    let ano = 2022;
+/* Variáveis e Constantes 
+Espaços identificados na memória para armazenar dados temporariamente */
 
-    // Constante: Valor imutavel (não muda)
-    const aluno = "Misael"
-    // const aluno = prompt()
-    
-    console.log(ano);
-    console.log(aluno);
+// Variável: valor pode mudar
+// Obs.: antigamente, era usado "var"
+let ano = 2022;
 
-    console.log(ano, aluno);
+// Constante: valor imutável (não muda)
+const aluno = "Tiago";
+// const aluno = prompt();
 
-    /* Operações matematicos 
-    + (adição)
-    - (subtração)
-    / (divisão)
-    * (multiplicação)*/
 
-    let preco = 1500;
-    let desconto = 250;
-    let precoFinal = preco - desconto;
+console.log(ano);
+console.log(aluno);
 
-    console.log(preco, desconto, precoFinal);
+console.log(ano, aluno);
 
-    let produto = "Tv led";
+/* Operações matemáticas
++ (adição) 
+- (subtração)
+/ (divisão) 
+* (multiplicação) */
+let preco = 1500;
+let desconto = 250;
+let precoFinal = preco - desconto;
 
-    /* A TV Led custava 1500 reias. */
+console.log(preco, desconto, precoFinal);
 
-    // 1. forma (tradiconal) - CONCATENAÇÃO
-    console.log("A "+produto+" custava "+preco+" reais.");
+let produto = "TV Led";
 
-    // 2. forma (moderna) - Template String/Literal
-    console.log(`A ${produto} custava ${preco} reias.`)
+/* A TV Led custava 1500 reais. */
+
+// 1ª forma (tradicional) - CONCATENAÇÃO
+console.log("A "+produto+" custava "+preco+" reais.");
+
+// 2ª forma (moderna) - Template String/Literal
+console.log(`A ${produto} custava ${preco} reais.`);
